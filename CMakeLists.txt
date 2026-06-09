@@ -4,6 +4,8 @@ include(pico-sdk/pico_sdk_init.cmake)
 
 project(picodeck)
 
+set(PICO_BOARD pico2)
+
 # initialize the Raspberry Pi Pico SDK
 pico_sdk_init()
 
