@@ -56,12 +56,15 @@ int main()
     board_init();
     tusb_init();
 
+    gpio_init(BUTTON_1_GPIO);
     gpio_set_dir(BUTTON_1_GPIO, GPIO_IN);
     gpio_pull_up(BUTTON_1_GPIO);
 
+    gpio_init(BUTTON_2_GPIO);
     gpio_set_dir(BUTTON_2_GPIO, GPIO_IN);
     gpio_pull_up(BUTTON_2_GPIO);
 
+    gpio_init(BUTTON_3_GPIO);
     gpio_set_dir(BUTTON_3_GPIO, GPIO_IN);
     gpio_pull_up(BUTTON_3_GPIO);
 
