@@ -130,7 +130,7 @@ void tud_resume_cb(void)
 void hid_task(void)
 {
     // Poll every 100ms
-    const uint32_t interval_ms = 100;
+    const uint32_t interval_ms = 10;
     static uint32_t start_ms = 0;
     static uint8_t prev_report[7] = {0}; // Track previous report
 
